@@ -1,0 +1,125 @@
+<div class="dashboard-container">
+        <div class="two">Recently Acquired Data:</div>
+        <div class="three">
+            <div>
+                <div id="recent-sequences">
+                    <div>Recent Sequences</div>
+    
+                    <div id="recent-sequences-row">
+                        <div>Name</div>
+                        <div>Status</div>
+                        <div>Time</div>
+                    </div>
+                    <div id="recent-sequences-row">
+                        <div>Corrosion Analysis</div>
+                        <div>Ok</div>
+                        <div>21-May-2018</div>
+                    </div>
+                    <div id="recent-sequences-row">
+                        <div>Corrosion Analysis</div>
+                        <div>Ok</div>
+                        <div>21-May-2018</div>
+                    </div>
+                    <div id="recent-sequences-row">
+                        <div>Corrosion Analysis</div>
+                        <div>Ok</div>
+                        <div>21-May-2018</div>
+                    </div>
+                    <div id="recent-sequences-row">
+                        <div>Corrosion Analysis</div>
+                        <div>Ok</div>
+                        <div>21-May-2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four">4</div>
+        <div class="five">
+            <div id="five-content">
+                <div>Instrument Status(Warning)</div>
+                <div>
+                    <div>Easy Card</div>
+                    <div>
+                        <ul>
+                            <li>Card 1 - Not Inserted</li>
+                            <li>Card 2 - Not Inserted</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>Source</div>
+                    <div>
+                        <ul>
+                            <li>Position - Card 1</li>
+                            <li>Sheath Gas - 50</li>
+                            <li>Aux Gas - 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>Mass Spectrometer</div>
+                    <ul>
+                        <li>Parameter 1</li>
+                        <li>Parameter 2</li>
+                        <li>Parameter 3</li>
+                    </ul>
+                </div>
+                <div>Pump</div>
+                <div>Autosampler</div>
+            </div>
+        </div>
+</div>
+
+
+<style>
+.dashboard-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows:  2fr 3fr;
+    grid-template-columns: 2fr 2fr 2.2fr;
+}
+.one {
+    background-color: rgb(211, 210, 210);
+    grid-row: 1 / 3;
+}
+
+.two {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.three {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);    
+}
+
+.four {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);    
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.five {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);    
+    grid-row: 1 / 3;
+}
+
+
+
+#five-content {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    padding: 20px;
+    grid-template-rows: 1fr 2.5fr 3.5fr 3.6fr 3.6fr 3.6fr;
+}
+
+#recent-sequences {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#recent-sequences-row {
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+}
+</style>
